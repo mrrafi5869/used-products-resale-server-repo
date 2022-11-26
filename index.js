@@ -36,6 +36,13 @@ async function run(){
             const result = await users.find(query).toArray();
             res.send(result);
         });
+
+        app.get("/myOrders", async(req, res) => {
+            const email = req.query.email;
+            const query = {email: email};
+            const result = await carBooked.find(query).toArray();
+            res.send(result);
+        });
         
         app.get("/allBuyers", async(req, res) => {
             const query = {user: "buyer"};
