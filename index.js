@@ -35,7 +35,21 @@ async function run(){
             const query = {};
             const result = await users.find(query).toArray();
             res.send(result);
-        })
+        });
+        
+        app.get("/allBuyers", async(req, res) => {
+            const query = {user: "buyer"};
+            const result = await users.find(query).toArray();
+            console.log(result);
+            res.send(result);
+        });
+
+        app.get("/allSellers", async(req, res) => {
+            const query = {user: "seller"};
+            const result = await users.find(query).toArray();
+            console.log(result);
+            res.send(result);
+        });
 
         app.post('/bookingCar', async(req, res) => {
             const car = req.body;
@@ -46,6 +60,13 @@ async function run(){
         app.post('/user', async(req, res) => {
             const user = req.body;
             const result = await users.insertOne(user);
+            res.send(result);
+        });
+
+        app.delete('/user/:id', async(req, res) => {
+            const id = req.params.id;
+            const query = {_id:ObjectId(id)}
+            const result = await users.deleteOne(query);
             res.send(result);
         });
 
