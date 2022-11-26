@@ -1,0 +1,224 @@
+[
+    {   
+        "img": "https://images.unsplash.com/photo-1546545817-27f0fb006153?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8dG95b3RhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        "name": "Toyota",
+        "made": "Japan",
+        "type":"Car",
+        "products": [
+            {   
+                "id": 1,
+                "img": "https://images.unsplash.com/photo-1603094539392-0d73239f4682?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJhZG98ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+                "name": "Prado",
+                "location": [
+                    "USA", "UK", "KSA", "UAE", "India", "Bangladesh", "Pakistan"
+                ],
+                "resalePrice": 90000,
+                "originalPrice": 140000,
+                "used": "3 Years"
+            },
+            {   
+                "id": 2,
+                "img": "https://images.unsplash.com/flagged/photo-1564153296137-400b51e1ff6d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHRveW90YXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+                "name": "Toyota BRZ",
+                "location": [
+                    "USA", "UK", "KSA", "UAE", "India", "Bangladesh", "Pakistan"
+                ],
+                "resalePrice": 10000,
+                "originalPrice": 150000,
+                "used": "2 Years"
+            },
+            {   
+                "id": 3,
+                "img": "https://images.unsplash.com/photo-1617469767053-d3b523a0b982?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHRveW90YXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+                "name": "SUV",
+                "location": [
+                    "USA", "UK", "KSA", "UAE", "India", "Bangladesh", "Pakistan"
+                ],
+                "resalePrice": 90000,
+                "originalPrice": 140000,
+                "used": "3 Years"
+            },
+            {   
+                "id": 4,
+                "img": "https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHRveW90YXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+                "name": "JDM",
+                "location": [
+                    "USA", "UK", "KSA", "UAE", "India", "Bangladesh", "Pakistan"
+                ],
+                "resalePrice": 80000,
+                "originalPrice": 120000,
+                "used": "4 Years"
+            },
+            {   
+                "id": 5,
+                "img": "https://images.unsplash.com/photo-1607603750909-408e193868c7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dG95b3RhJTIwc3VwcmF8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+                "name": "Toyota Supra",
+                "location": [
+                    "USA", "UK", "KSA", "UAE", "India", "Bangladesh", "Pakistan"
+                ],
+                "resalePrice": 90000,
+                "originalPrice": 120000,
+                "used": "3 Years"
+            },
+            {   
+                "id": 6,
+                "img": "https://images.unsplash.com/photo-1603811478700-7590182b6abb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8dG95b3RhJTIwc3VwcmF8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+                "name": "MKIV",
+                "location": [
+                    "USA", "UK", "KSA", "UAE", "India", "Bangladesh", "Pakistan"
+                ],
+                "resalePrice": 75000,
+                "originalPrice": 105000,
+                "used": "4 Years"
+            }
+        ]
+    },
+    {   
+        "img": "https://images.unsplash.com/photo-1625811354078-1e6a34132752?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bGFtYm9yZ2hpbmklMjBsb2dvfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+        "name": "Lamborghini",
+        "made": "Italy",
+        "type":"Sports Car",
+        "products": [
+            {   
+                "id": 1,
+                "img": "https://images.unsplash.com/photo-1580654712603-eb43273aff33?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bGFtYm9yZ2hpbml8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+                "name": "Lamborghini Avantador",
+                "location": [
+                    "USA", "UK", "KSA", "UAE", "India", "Bangladesh", "Pakistan"
+                ],
+                "resalePrice": 90000,
+                "originalPrice": 140000,
+                "used": "3 Years"
+            },
+            {   
+                "id": 2,
+                "img": "https://images.unsplash.com/photo-1532581140115-3e355d1ed1de?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bGFtYm9yZ2hpbml8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+                "name": "Lamborghini Huracan",
+                "location": [
+                    "USA", "UK", "KSA", "UAE", "India", "Bangladesh", "Pakistan"
+                ],
+                "resalePrice": 10000,
+                "originalPrice": 150000,
+                "used": "2 Years"
+            },
+            {   
+                "id": 3,
+                "img": "https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bGFtYm9yZ2hpbml8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+                "name": "Lamborghini SVJ",
+                "location": [
+                    "USA", "UK", "KSA", "UAE", "India", "Bangladesh", "Pakistan"
+                ],
+                "resalePrice": 90000,
+                "originalPrice": 140000,
+                "used": "3 Years"
+            },
+            {   
+                "id": 4,
+                "img": "https://images.unsplash.com/photo-1611900713725-864f48309d67?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGxhbWJvcmdoaW5pfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+                "name": "Lamborghini Avantador",
+                "location": [
+                    "USA", "UK", "KSA", "UAE", "India", "Bangladesh", "Pakistan"
+                ],
+                "resalePrice": 80000,
+                "originalPrice": 120000,
+                "used": "4 Years"
+            },
+            {   
+                "id": 5,
+                "img": "https://images.unsplash.com/photo-1633507104446-8e94340c8ea3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGxhbWJvcmdoaW5pfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+                "name": "Lamborghini Espada",
+                "location": [
+                    "USA", "UK", "KSA", "UAE", "India", "Bangladesh", "Pakistan"
+                ],
+                "resalePrice": 90000,
+                "originalPrice": 120000,
+                "used": "3 Years"
+            },
+            {   
+                "id": 6,
+                "img": "https://images.unsplash.com/photo-1617718982887-3d73c4424f3a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGxhbWJvcmdoaW5pfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+                "name": "Lamborghini Urraco",
+                "location": [
+                    "USA", "UK", "KSA", "UAE", "India", "Bangladesh", "Pakistan"
+                ],
+                "resalePrice": 75000,
+                "originalPrice": 105000,
+                "used": "4 Years"
+            }
+        ]
+    },
+    {   
+        "img": "https://images.unsplash.com/photo-1593431708856-836fe271487c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZmVycmFyaSUyMGxvZ298ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        "name": "Ferrari",
+        "made": "Italy",
+        "type":"Sports Car",
+        "products": [
+            {   
+                "id": 1,
+                "img": "https://images.unsplash.com/photo-1583121274602-3e2820c69888?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZmVycmFyaXxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60",
+                "name": "LaFerrari",
+                "location": [
+                    "USA", "UK", "KSA", "UAE", "India", "Bangladesh", "Pakistan"
+                ],
+                "resalePrice": 90000,
+                "originalPrice": 140000,
+                "used": "3 Years"
+            },
+            {   
+                "id": 2,
+                "img": "https://images.unsplash.com/photo-1592198084033-aade902d1aae?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmVycmFyaXxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60",
+                "name": "Ferrari 458",
+                "location": [
+                    "USA", "UK", "KSA", "UAE", "India", "Bangladesh", "Pakistan"
+                ],
+                "resalePrice": 10000,
+                "originalPrice": 150000,
+                "used": "2 Years"
+            },
+            {   
+                "id": 3,
+                "img": "https://images.unsplash.com/photo-1632441730372-d8509de481d1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8ZmVycmFyaXxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60",
+                "name": "LaFerrari",
+                "location": [
+                    "USA", "UK", "KSA", "UAE", "India", "Bangladesh", "Pakistan"
+                ],
+                "resalePrice": 90000,
+                "originalPrice": 140000,
+                "used": "3 Years"
+            },
+            {   
+                "id": 4,
+                "img": "https://images.unsplash.com/photo-1597935370784-051cdebbe6a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGZlcnJhcml8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+                "name": "Ferrari Portofino",
+                "location": [
+                    "USA", "UK", "KSA", "UAE", "India", "Bangladesh", "Pakistan"
+                ],
+                "resalePrice": 80000,
+                "originalPrice": 120000,
+                "used": "4 Years"
+            },
+            {   
+                "id": 5,
+                "img": "https://images.unsplash.com/photo-1595951280326-8ffa79bdfbc0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGZlcnJhcml8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+                "name": "Ferrari 488",
+                "location": [
+                    "USA", "UK", "KSA", "UAE", "India", "Bangladesh", "Pakistan"
+                ],
+                "resalePrice": 90000,
+                "originalPrice": 120000,
+                "used": "3 Years"
+            },
+            {   
+                "id": 6,
+                "img": "https://images.unsplash.com/photo-1618265397716-9e124a1b75a4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGZlcnJhcml8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+                "name": "Ferrari GTC4Lusso",
+                "location": [
+                    "USA", "UK", "KSA", "UAE", "India", "Bangladesh", "Pakistan"
+                ],
+                "resalePrice": 75000,
+                "originalPrice": 105000,
+                "used": "4 Years"
+            }
+        ]
+    }
+]
