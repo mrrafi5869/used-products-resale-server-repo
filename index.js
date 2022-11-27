@@ -69,9 +69,16 @@ async function run(){
             const email = req.params.email;
             const query ={email: email};
             const user = await usersCollection.findOne(query);
-            res.send({isAdmin: user?.user === 'seller'})
+            res.send({isSeller: user?.user === 'seller'})
         });
 
+
+        app.get('/users/buyer/:email', async(req, res) => {
+            const email = req.params.email;
+            const query ={email: email};
+            const user = await usersCollection.findOne(query);
+            res.send({isBuyer: user?.user === 'buyer'})
+        });
 
         app.post('/bookingCar', async(req, res) => {
             const car = req.body;
