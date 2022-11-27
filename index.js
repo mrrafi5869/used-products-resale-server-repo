@@ -65,6 +65,14 @@ async function run(){
             res.send({isAdmin: user?.role === 'admin'})
         });
 
+        app.get('/users/seller/:email', async(req, res) => {
+            const email = req.params.email;
+            const query ={email: email};
+            const user = await usersCollection.findOne(query);
+            res.send({isAdmin: user?.user === 'seller'})
+        });
+
+
         app.post('/bookingCar', async(req, res) => {
             const car = req.body;
             const result = await carBooked.insertOne(car)      
