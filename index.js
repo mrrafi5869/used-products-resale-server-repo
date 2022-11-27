@@ -17,6 +17,7 @@ async function run(){
         const carCategories = client.db('usedProductResale').collection('carCategories');
         const carBooked = client.db('usedProductResale').collection('booked');
         const users = client.db('usedProductResale').collection('users');
+        const myProducts = client.db('usedProductResale').collection('myPorducts');
 
         app.get('/carCategories', async(req, res) => {
             const query = {};
@@ -45,19 +46,19 @@ async function run(){
         });
         
         app.get("/allBuyers", async(req, res) => {
-            const query = {user: "buyer"};
+            const query = {role: "buyer"};
             const result = await users.find(query).toArray();
             console.log(result);
             res.send(result);
         });
 
         app.get("/allSellers", async(req, res) => {
-            const query = {user: "seller"};
+            const query = {role: "seller"};
             const result = await users.find(query).toArray();
             console.log(result);
             res.send(result);
         });
-
+        // https://github.com/0nahid/inventory-management/blob/d76475d08bde174ef7134d205e75b49b69c0251c/src/controllers/supplierController.ts#L67
         app.get('/users/admin/:email', async(req, res) => {
             const email = req.params.email;
             const query ={email: email};
@@ -68,16 +69,16 @@ async function run(){
         app.get('/users/seller/:email', async(req, res) => {
             const email = req.params.email;
             const query ={email: email};
-            const user = await usersCollection.findOne(query);
-            res.send({isSeller: user?.user === 'seller'})
+            const user = await users.findOne(query);
+            res.send({isSeller: user?.role === 'seller'})
         });
 
 
         app.get('/users/buyer/:email', async(req, res) => {
             const email = req.params.email;
             const query ={email: email};
-            const user = await usersCollection.findOne(query);
-            res.send({isBuyer: user?.user === 'buyer'})
+            const user = await users.findOne(query);
+            res.send({isBuyer: user?.role === 'buyer'})
         });
 
         app.post('/bookingCar', async(req, res) => {
@@ -91,6 +92,10 @@ async function run(){
             const result = await users.insertOne(user);
             res.send(result);
         });
+
+        app.post("/addProduct", async(req, res) => {
+            
+        })
 
         app.delete('/user/:id', async(req, res) => {
             const id = req.params.id;
