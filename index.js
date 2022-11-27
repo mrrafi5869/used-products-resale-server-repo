@@ -58,6 +58,13 @@ async function run(){
             res.send(result);
         });
 
+        app.get('/users/admin/:email', async(req, res) => {
+            const email = req.params.email;
+            const query ={email: email};
+            const user = await users.findOne(query);
+            res.send({isAdmin: user?.role === 'admin'})
+        });
+
         app.post('/bookingCar', async(req, res) => {
             const car = req.body;
             const result = await carBooked.insertOne(car)      
