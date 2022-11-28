@@ -19,6 +19,7 @@ async function run(){
         const carBooked = client.db('usedProductResale').collection('booked');
         const users = client.db('usedProductResale').collection('users');
         const myProducts = client.db('usedProductResale').collection('myPorducts');
+        const paymentsCollection = client.db('usedProductResale').collection('payments');
 
         app.get('/carCategories', async(req, res) => {
             const query = {};
@@ -117,6 +118,21 @@ async function run(){
             res.send({
                 clientSecret: paymentIntent.client_secret,
               });
+        })
+
+        app.post('/payments', async(req, res) => {
+            const payment = req.body;
+            const result = await paymentsCollection.insertOne(payment);
+            const id = payment.bookingId;
+            const filter = {_id: ObjectId(id)};
+            const updatedDoc = {
+                $set:{
+                    paid: true,
+                    transactionId: payment.transactionId
+                }
+            }
+            const updatedResult = await carBooked.updateOne(filter, updatedDoc);
+            res.send(result);
         })
 
         app.post('/user', async(req, res) => {
