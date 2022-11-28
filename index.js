@@ -58,7 +58,14 @@ async function run(){
             console.log(result);
             res.send(result);
         });
-        // https://github.com/0nahid/inventory-management/blob/d76475d08bde174ef7134d205e75b49b69c0251c/src/controllers/supplierController.ts#L67
+
+        app.get("/myProductsData", async(req, res) => {
+            const email = req.query.email;
+            const query = {email: email};
+            const result = await myProducts.find(query).toArray();
+            res.send(result);
+        });
+
         app.get('/users/admin/:email', async(req, res) => {
             const email = req.params.email;
             const query ={email: email};
@@ -94,8 +101,22 @@ async function run(){
         });
 
         app.post("/addProduct", async(req, res) => {
-            
-        })
+            const products = req.body;
+            const result = await myProducts.insertOne(products);
+            res.send(result);
+        });
+
+        // app.get('/addPrice', async(req, res) => {
+        //     const filter = {};
+        //     const options = {upsert: true}
+        //     const updateDoc = {
+        //         $set: {
+        //             price: 99
+        //         }
+        //     }
+        //     const result = await myProducts.updateMany(filter, updateDoc, options);
+        //     res.send(result);
+        // })
 
         app.delete('/user/:id', async(req, res) => {
             const id = req.params.id;
